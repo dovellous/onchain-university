@@ -1,0 +1,94 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.tsx",
+  "dependencies": {
+    "0xsequence": "^0.43.21",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.15.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.3.4",
+    "bootstrap": "^5.2.3",
+    "buffer": "^6.0.3",
+    "dotenv": "^16.0.3",
+    "infura-web3-provider": "^0.0.3",
+    "moment": "^2.29.4",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-lazy-load": "^4.0.1",
+    "react-modal": "^3.16.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "react-sliding-pane": "^7.3.0",
+    "redux": "^4.2.1",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "sweetalert2": "^11.7.3",
+    "swiper": "^9.1.0",
+    "universal-cookie": "^4.0.4",
+    "wagmi": "^0.12.1",
+    "web-vitals": "^3.3.0"
+  },
+  "devDependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.8.2",
+    "@redux-devtools/core": "^3.13.1",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/react-modal": "^3.13.1",
+    "@web3modal/ethereum": "^2.2.0",
+    "@web3modal/react": "^2.2.0",
+    "chai": "^4.3.7",
+    "ethers": "^6",
+    "hardhat": "^2.13.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "nft.storage": "^7.0.3",
+    "solidity-coverage": "^0.8.2",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.5",
+    "web3modal": "^1.9.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
