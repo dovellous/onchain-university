@@ -8,25 +8,9 @@ const config: HardhatUserConfig = {
     localhost: {
       url: process.env.URL_LOCAL_HOST_URL + ":" + process.env.URL_LOCAL_PORT,
     },
-    ropsten: {
-      url: process.env.URL_ETH_ROPSTEN + process.env.INFURA_API_KEY || "",
+    goerli: {
+      url: process.env.URL_ETH_GOERLI + process.env.INFURA_API_KEY || "",
       chainId: 3,
-      accounts:
-          process.env.DEPLOYMENT_ACCOUNT_KEY !== undefined
-              ? [process.env.DEPLOYMENT_ACCOUNT_KEY]
-              : [],
-    },
-    rinkeby: {
-      url: process.env.URL_ETH_RINKEBY + process.env.INFURA_API_KEY || "",
-      chainId: 4,
-      accounts:
-          process.env.DEPLOYMENT_ACCOUNT_KEY !== undefined
-              ? [process.env.DEPLOYMENT_ACCOUNT_KEY]
-              : [],
-    },
-    kovan: {
-      url: process.env.URL_ETH_KOVAN + process.env.INFURA_API_KEY || "",
-      chainId: 42,
       accounts:
           process.env.DEPLOYMENT_ACCOUNT_KEY !== undefined
               ? [process.env.DEPLOYMENT_ACCOUNT_KEY]
