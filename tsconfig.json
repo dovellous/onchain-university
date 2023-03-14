@@ -18,10 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "outDir": "dist",
     "jsx": "react-jsx"
   },
   "include": [
-    "frontend/src"
-  ]
+    "frontend/src", "./scripts", "./test", "./typechain-types"
+  ],
+  "files": ["./hardhat.config.ts"]
 }
 
