@@ -1,0 +1,72 @@
+/*                                          
+Follow/Subscribe Youtube, Github
+for more amazing content!!
+@Net2Dev
+███╗░░██╗███████╗████████╗██████╗░██████╗░███████╗██╗░░░██╗
+████╗░██║██╔════╝╚══██╔══╝╚════██╗██╔══██╗██╔════╝██║░░░██║
+██╔██╗██║█████╗░░░░░██║░░░░░███╔═╝██║░░██║█████╗░░╚██╗░██╔╝
+██║╚████║██╔══╝░░░░░██║░░░██╔══╝░░██║░░██║██╔══╝░░░╚████╔╝░
+██║░╚███║███████╗░░░██║░░░███████╗██████╔╝███████╗░░╚██╔╝░░
+╚═╝░░╚══╝╚══════╝░░░╚═╝░░░╚══════╝╚═════╝░╚══════╝░░░╚═╝░░░
+THIS CONTRACT IS AVAILABLE FOR EDUCATIONAL 
+PURPOSES ONLY. YOU ARE SOLELY REPONSIBLE 
+FOR ITS USE. I AM NOT RESPONSIBLE FOR ANY
+OTHER USE. THIS IS TRAINING/EDUCATIONAL
+MATERIAL. ONLY USE IT IF YOU AGREE TO THE
+TERMS SPECIFIED ABOVE.
+
+ADD ACCESS CONTROL TO CONTRACT FUNCTIONS
+*/                           
+
+// SPDX-License-Identifier: MIT LICENSE
+
+import "@openzeppelin/contracts/access/AccessControl.sol";
+
+
+contract VerifyAccess is AccessControl {
+
+    /*
+    STEP-1
+    ADD ROLES TO THE SMART CONTRACT
+    Encrypt info in keccak256 and lower storage usage in
+    smart contract. Save gas fees!
+    */
+
+    bytes32 public constant EXECUTER_ROLE = keccak256("EXECUTER_ROLE");
+    bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
+
+    /*
+    STEP-2
+    DECLARE ROLES DURING CONTRACT DEPLOYMENT
+    IN THIS SAMPLE, THE ROLES ARE BEING ASSIGNED TO THE
+    CONTRACT DEPLOYER
+    */
+
+    constructor() {
+
+        _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
+        _setupRole(EXECUTER_ROLE, _msgSender());
+        _setupRole(PAUSER_ROLE, _msgSender());
+
+    }
+
+    /*
+    STEP-3
+    APPLY THE ROLES TO THE FUNCTIONS AS YOU LIKE :)
+    */
+
+    function mint(address to, uint256 tokenId) public virtual {
+        require(hasRole(EXECUTER_ROLE, _msgSender()), "You must have executer role to mint");
+        _mint(to, tokenId);
+    }
+
+    function pause() public virtual {
+        require(hasRole(PAUSER_ROLE, _msgSender()), "You must have pauser role to pause");
+        _pause();
+    }
+
+    function unpause() public virtual {
+        require(hasRole(PAUSER_ROLE, _msgSender()), "You must have pauser role to unpause");
+        _unpause();
+    }
+}

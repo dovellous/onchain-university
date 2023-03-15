@@ -1,0 +1,282 @@
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kohinoor Bangla', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.owl-carousel{
+  display: block !important;
+}
+
+@import "BannerStrip";
+@import "MenuPage";
+header.header-5 {
+
+  //
+  .main-header-wraper {
+
+    width: 100%;
+
+    //Topbar
+    .top-header {
+      height: 40px;
+      padding: 6px 50px;
+      background-color: #69ffd5;
+
+      .header-cta ul li {
+        margin-right: 20px;
+        display: inline-block;
+        height: 24px;
+        border: 1px solid red;
+        overflow: hidden;
+      }
+
+    }
+
+    // Stylish Action Buttons
+    .theme-btn {
+      z-index: 1;
+      font-weight: 500;
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+
+      &.cyan::before {
+        background-color: #69ffd5;
+      }
+
+      &.magenta::before {
+        background-color: #ff00b3;
+      }
+
+      img{
+        min-height: 40px !important;
+      }
+    }
+
+  }
+
+  //Header Menu
+  .main-menu ul > li > a {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 40.5px 24px;
+    display: inline-block;
+    color: #211e3b;
+    text-transform: uppercase;
+  }
+
+}
+
+.hero-slide-wrapper.techex-landing-page .single-slide::after {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.preloader .animation-preloader .spinner {
+  border-top-color: #cc0000;
+}
+
+.logo{
+  min-width: 160px;
+}
+
+.mobile-nav {
+  background-color: #720a0c;
+
+}
+.mobile-nav.show {
+  width: 95vw !important;
+}
+
+.mobile-nav .sidebar-nav .metismenu a:hover, .mobile-nav .sidebar-nav .metismenu a:focus, .mobile-nav .sidebar-nav .metismenu a:active {
+  color: #720a0c;
+  background: #ffc107;
+}
+
+header.header-5 #hamburger {
+  font-size: 44px;
+  color: #e20714;
+}
+
+.w-100{
+  width: 100% !important;
+}
+
+.w-80{
+  width: 80% !important;
+}
+
+.w-75{
+  width: 75% !important;
+}
+
+.w-50{
+  width: 50% !important;
+}
+
+.w-25{
+  width: 25% !important;
+}
+
+.banner-slider-img {
+  display: block;
+  max-width: 450px !important;
+  margin: auto;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.hero-slide-wrapper.techex-landing-page .single-slide {
+  z-index: 1;
+  padding: 102.5px 0;
+  position: relative;
+}
+
+
+.newsletter_widget .newsletter_box form {
+  height: 64px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.newsletter_widget .newsletter_box form input {
+  width: 75%;
+  position: relative;
+  background: #ffffff;
+  padding-left: 25px;
+  padding-right: 15px;
+  line-height: 1;
+  color: #000000;
+  border-radius: 7px 0 0 7px;
+  font-size: 20px;
+}
+.newsletter_widget .newsletter_box form input::-webkit-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::-moz-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input:-ms-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::-ms-input-placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form input::placeholder {
+  color: #696969;
+  text-transform: capitalize;
+}
+.newsletter_widget .newsletter_box form button {
+  width: 25%;
+  height: 100%;
+  background: #68ffd5;
+  color: #ff00b3;
+  display: inline-block;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 22px;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.newsletter_widget .newsletter_box form button:hover {
+  color: #000;
+}
+.newsletter_widget .newsletter_box span {
+  color: #cacaca;
+}
+
+.contact_widget_2 .contact-us .single-contact-info .icon {
+  color: #e20714;
+}
+
+.footer-4 .social-link a {
+  background-color: #ffffff;
+  color: #e20714 !important;
+}
+
+.footer-4 .social-link a:hover {
+  color: #fff !important;
+  background-color: #e20714;
+}
+
+.footer-4 {
+  background-color: #000000;
+}
+
+.footer-4 a:hover {
+  color: #fbc415 !important;
+}
+
+.footer-4 .footer-bottom-content a:hover {
+  color: #fbc415 !important;
+}
+
+.contact_widget_2 .contact-us .single-contact-info .icon  {
+  font-size: 16px;
+  padding: 0;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+
+.footer-4 {
+  z-index: 1;
+  padding-top: 0;
+  margin-top: 0;
+  position: relative;
+  background-color: #211e3b;
+}
+
+header.header-5 .top-header .header-cta ul li a i {
+  margin-right: 10px;
+  color: #e20714;
+}
+
+header.header-5 .top-header .header-right-cta .social-profile a:hover {
+  color: #e20714;
+}
+
+header.header-5 .top-header .header-right-cta {
+  color: #e20714;
+}
+
+.download-app{
+  display: block !important;
+  width: 140px !important;
+  min-width: 165px !important;
+  height: auto;
+  margin: 0 !important;
+  background-size: contain !important;
+  min-height: 50px;
+  border: 1px solid transparent;
+
+  &.android{
+    background: url('../../../public/assets/elements/buttons/btn-google-play.png') top left no-repeat;
+  }
+  &.ios{
+    background: url('../../../public/assets/elements/buttons/btn-app-store.png') top left no-repeat;
+  }
+
+}
+
+.cta-banner.style-3 .container-fluid {
+  max-width: 1520px;
+  padding: 90px 15px;
+  border-radius: 0;
+  background-color: #efefef;
+}

@@ -1,0 +1,28 @@
+{
+  "cwd": "C:\\apps\\projects\\project-vongai\\",
+  "type": [
+    "capacitor",
+    "pwa",
+    "web"
+  ],
+  "name": "react-typescript-hardhat-template",
+  "framework": "react",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#5500ce",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "pkg": "pkg.tld",
+  "capacitor": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

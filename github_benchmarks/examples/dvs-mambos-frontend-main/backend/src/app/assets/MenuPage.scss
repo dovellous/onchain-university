@@ -1,0 +1,159 @@
+img.category-banner-text-icon {
+  display: inline-block;
+  position: relative;
+  top: -80px;
+  right: 0;
+  float: right;
+}
+
+.bg-grey-pattern{
+  background-image: url('../../../public/assets/elements/banners/bg-body.svg');
+  background-size:contain;
+  /*background-position: top center;
+  background-repeat: repeat-y;*/
+}
+
+.line-height-24{
+  line-height: 24px;
+}
+
+.price-text {
+  color: #333333 !important;
+  font-weight: 800;
+}
+.menu-foot-cats{
+  margin: 0 !important;
+  margin-bottom: 100px !important;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.border-radius-zero {
+  border-radius: 0 !important;
+}
+
+.menu-nav-bar-slider {
+
+  background-color: #000000;
+
+  ul.menu-nav-container {
+    line-height: 1;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: fit-content;
+    border: 1px solid #000000;
+
+    li {
+      display: inline-block;
+      line-height: 1;
+      list-style: none;
+      position: relative;
+      margin: 0;
+      width: auto;
+      background: black;
+      padding: 0px;
+      color: white !important;
+      border: 1px solid #202020;
+
+      &a:hover {
+        background-color: yellow;
+        color: #000000;
+      }
+
+      &:hover {
+        background-color: yellow;
+        color: #000000;
+      }
+
+      a {
+
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 600;
+        overflow: hidden;
+        padding: 13px;
+        display: inline-block;
+        color: #898989;
+        width: 100%;
+
+        &:hover {
+          color: #000000;
+        }
+
+      }
+
+      a.active{
+        color: #770000;
+        background-color: yellow;
+      }
+
+    }
+
+  }
+
+}
+
+.menu-nav-bar-wrapper {
+
+  &.fixed{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+  }
+
+  &.static{
+    position: initial;
+    top: initial;
+    width: 100%;
+  }
+
+}
+
+.ReactModalPortal {
+  z-index: 2147483646 !important;
+  display: inline-block;
+  position: absolute;
+
+  .slide-pane.slide-pane_from_right.some-custom-class.content-after-open{
+    width: 525px !important;
+  }
+
+  .chatfood-container .chatfood-order-system-frame.chatfood-visible {
+    visibility: visible;
+    right: 0;
+  }
+
+  #cfwOrderSystem{
+    top: 0;
+    height: 100vh;
+    transition: all .3s ease;
+    visibility: visible;
+    position: fixed !important;
+    width: 100%;
+    border: 0;
+    z-index: auto;
+    right: 0px;
+  }
+
+}
+
+
+.ReactModal__Content{
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: -webkit-fill-available;
+  box-shadow: 2px 2px 16px #00000042 !important;
+  max-width: 520px !important;
+  min-height: 90vh !important;
+}
+
+.ReactModal__Overlay {
+  background-color: #000000d6 !important;
+}
+
+.tg-0pky {
+  padding: 10px;
+  font-size: 14px;
+}

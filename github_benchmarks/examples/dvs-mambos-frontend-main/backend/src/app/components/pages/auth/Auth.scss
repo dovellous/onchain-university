@@ -1,0 +1,20 @@
+.auth-one-bg .bg-overlay {
+  background: -webkit-gradient(linear,left top,right top,from(#220000),to(#b33838));
+  background: linear-gradient(to right,#220000,#b33838);
+  opacity: .9;
+}
+
+.mr-15{
+  margin-right: 15px;
+}
+
+.auth-bg-cover {
+  background: linear-gradient(-45deg,#fdc10d 50%,#800000);
+}
+
+.auth-page-wrapper .auth-page-content {
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
