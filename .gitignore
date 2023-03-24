@@ -10,4 +10,4 @@ typechain-types
 cache
 artifacts
 
-mocks/nft/node_modules
+mocks/nft
